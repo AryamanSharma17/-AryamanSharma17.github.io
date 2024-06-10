@@ -3004,6 +3004,9 @@ button:disabled,
 
 .wrapper {
 	padding: 6em 0 4em 0;
+	min-height: 100vh;
+	max-width: 1366px;
+	margin: 0 auto;
 }
 
 .wrapper>.inner {
@@ -3026,13 +3029,58 @@ button:disabled,
 	}
 
 }
+.wrapper .morewr {
+	-moz-transition: -moz-transform 0.710s ease, opacity 0.710s ease;
+	-webkit-transition: -webkit-transform 0.710s ease, opacity 0.710s ease;
+	-ms-transition: -ms-transform 0.710s ease, opacity 0.710s ease;
+	transition: transform 0.710s ease, opacity 0.710s ease;
+	-moz-transition-delay: 3.10s;
+	-webkit-transition-delay: 3.10s;
+	-ms-transition-delay: 3.10s;
+	transition-delay: 3.10s;
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	border: none;
+	bottom: 0;
+	color: inherit;
+	font-size: 0.8em;
+	height: 8.5em;
+	left: 50%;
+	letter-spacing: 0.225em;
+	margin-left: -8.5em;
+	opacity: 1;
+	outline: 0;
+	padding-left: 0.225em;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 16em;
+	z-index: 1;
+}
+
+.wrapper .morewr:after {
+	background-image: url("images/arrow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 4em;
+	content: '';
+	display: block;
+	height: 1.5em;
+	left: 50%;
+	margin: 0 0 0 -0.75em;
+	position: absolute;
+	width: 1.5em;
+}
 
 .wrapper.alt {
 	padding: 0;
 }
 
 .wrapper.style1 {
-	background-color: rgb(0, 0, 0);
+	background-color: #07beb8;
 	color: #c8ece9;
 }
 
@@ -3200,11 +3248,11 @@ button:disabled,
 }
 
 .wrapper.style2 {
-	background-color: rgba(20, 80, 100);
+	background-color: #3dccc7;
 }
 
 .wrapper.style3 {
-	background-color: rgb(20, 80, 100);
+	background-color: #68d8d6;
 	color: #000000;
 }
 
@@ -3376,7 +3424,7 @@ button:disabled,
 }
 
 .wrapper.style5 {
-	background-color: #ffffff;
+	background-color: #9ceaef;
 	color: #4E4852;
 }
 
